@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Página de salas de Kwitter</title>
+	<title>Sala de Kwitter</title>
 <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
 <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
@@ -17,35 +17,27 @@
 
 </head>
 <body>
-
-
 <div class="container">
-	<button id="logout" onclick="logout();" class="glyphicon glyphicon-log-out btn btn-danger">Cerrar sesión</button>
-
+<button id="logout" onclick="logout();"class ="glyphicon glyphicon-log-out btn btn-danger">Cerrar sesión</button>
 	<center>
-		<h1  class="header">	
+		<h1 class="header">	
 			Kwitter	
 			<sup>
 				<img src="m2.png">
 			</sup>
 		</h1>
 		<h3 id="user_name" class="color_white"></h3>
-
 		<div class="form-group input_div_room_page">
-			<label>#Añadir sala:</label>
+			<label>#Agregar sala:</label>
 			<input type="text" id="room_name" class="form-control" placeholder="#Nombre de la sala">
+
 		</div>
-		
-		<button onclick="addRoom();" class="btn btn-success">#Añadir sala</button>
-
-		<h3 class="color_white">#SALASPOPULARES</h3>
-
+		<button onclick="addRoom();" class="btn btn-success">#Agregar sala</button>
+		<h3 class="color_white">#SALASDETENDENCIA</h3>
 		<div id="output"></div>
-		
+
 	</center>
 </div>
-
-
 <script src="kwitter_room.js"></script>
 </body>
 </html>
